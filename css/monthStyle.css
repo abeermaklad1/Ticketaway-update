@@ -1,0 +1,201 @@
+
+.booking {
+    text-decoration: none;
+    font-size: 30px;
+    background-color: white;
+    text-align: center;
+    border: 3px solid green;
+    padding: 5px;
+  }
+  
+  .booking:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  form {
+    width: 85%;
+    color: black;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 2px solid orange;
+    box-shadow: 0px 0px 40px 16px rgba(0, 0, 0, 1.00);
+  }
+  
+  form:hover {
+    border: 2px solid lightblue;
+  }
+  
+  lable {
+    font-size: 20px;
+    /*font-family: 'Lato';*/
+    font-style: italic;
+  }
+  
+  .input {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 10px auto;
+  
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-bottom: 2px solid gray;
+    /*border-radius: 15px;*/
+    /*background-color:antiquewhite;*/
+    color: black;
+    box-sizing: border-box;
+    display: inline-block;
+    /*position: absolute;*/
+  
+  }
+  
+  .date {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-bottom: 2px solid gray;
+    /*border-radius: 15px;*/
+    box-sizing: border-box;
+    /*background-color:antiquewhite;*/
+    /*color: white;*/
+  }
+  
+  .date:focus {
+    outline: none;
+  }
+  
+  .input:focus {
+  
+    outline: none;
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid purple;
+    border-radius: 15px;
+    /*background-color:antiquewhite;*/
+    /*color: white;*/
+    /* border: 3px solid #555;*/
+  
+  }
+  
+  .input:hover {
+    border-bottom: 2px solid violet;
+  }
+  
+  /*select {
+      width: 30%;
+      padding: 16px 20px;
+        margin: 10px;
+      border: none;
+        border-bottom: 3px solid rgb(2,2,2);
+      border-radius: 15px;
+        background-color: rgb(255,255,255);
+        box-sizing: border-box;
+      background-color:antiquewhite;
+    }*/
+  input[type=button],
+  input[type=submit],
+  input[type=reset] {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 30px;
+    color: whitesmoke;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  form lable {
+    color: black;
+  }
+  
+  input[type=radio] {
+    color: red;
+    background-color: green;
+  }
+  
+  
+  
+  #aday {
+    color: white;
+  }
+  
+  .autocomplete {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+  }
+  
+  .station {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid gray;
+  
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .station:hover {
+    border: none;
+    /*background-color: black;color:white;*/
+    border-bottom: 2px solid violet;
+  }
+  
+  .station:focus {
+    border: none;
+    border-bottom: 2px solid purple;
+    /*border-color: white;*/
+    outline: none;
+  }
+  
+  /*input[type=text] {
+      background-color: #f1f1f1;
+      width: 100%;
+    }*/
+  
+  /*
+    input[type=submit] {
+      background-color: DodgerBlue;
+      color: #fff;
+      cursor: pointer;
+    }
+    */
+  
+  .autocomplete-items {
+    position: absolute;
+    border: none;
+    /*border: 1px solid #d4d4d4;*/
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    /* border-bottom: 1px solid #d4d4d4;*/
+  }
+  
+  /*when hovering an item:*/
+  .autocomplete-items div:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /*when navigating through the items using the arrow keys:*/
+  .autocomplete-active {
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+  }

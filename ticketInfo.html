@@ -1,0 +1,267 @@
+<html>
+
+<head>
+  <link rel = "icon" href =  "images/train-ticket-icon-cartoon-style-vector-24754004.jpg"  type = "image/x-icon"> 
+  <link rel="StyleSheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="StyleSheet" href="css/ticketInfo.css" />
+  <link rel="stylesheet" href="css/stylePayment.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+
+
+<body>
+
+<!--Navbar-->
+
+ <section class="cover-nav">
+    <div class="layer">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="images/logo.jpeg" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                  Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="help.html">Help</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="registration.html">Sign Up</a>
+              </li>
+            </ul>
+
+            <div class="btn-group" style="float: right">
+              <button
+                type="button"
+                class="btn btn-dark dropdown-toggle linkin"
+                data-toggle="dropdown"
+              >
+                <span class="spinner-grow text-warning spinner-grow-sm"></span
+                >booking
+              </button>
+
+              <div class="dropdown-menu">
+                <a class="dropdown-item linkin" href="#aday"
+                  ><span class="badge badge-dark">day</span> booking</a
+                >
+                <a class="dropdown-item linkin" href="monthBooking.html"
+                  ><span class="badge badge-dark">month</span> booking</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+</section>
+
+<!--Ticket Information-->
+  
+  <section class="" class="py-5">
+    <div class="container py-5">
+      <div id="" class="row ticketInfo py-5">
+
+        <div class="col-lg-4">
+          <div class="mb-3 ml-5">
+            <h4 class="text-info">Ticket Details</h4>
+          </div>
+        </div>
+
+        <div id="ticketInformation" class="col-lg-4">
+          <button type="button" class="btn btn-outline-primary" id="payBtn" onclick="add()">Get Your Ticket Information</button>
+            <!-- <div>
+              <h4 class="text-info mb-4"><img class="img-fluid ticketImg" src="images/ttt.png" alt="ticket">passenger Details</h4>
+                    <div class="info contain ml-5">
+                        <div class="info">
+                        <p>Abeer Adel Mohamed</p>
+                        <p>ID: 29923232323232</p>
+                        <p>Phone: 01012121212</p>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="tick">
+                        <p class="font-weight-bold text-secondary pb-2">Thu 5 May 2021</p>
+                        <div class="row px-3">
+                            <p class="mr-5">From: Helwan</p>
+                            <p>To: Ain Helwan</p>
+                        </div>
+                        <p><i class="fa fa-user" aria-hidden="true"></i> 2 passengers</p>
+                        </div>
+                        <p class="text-success">This Trip Is Operated By: Ticketaway</p>
+                    </div>
+              
+            </div> -->
+          </div>
+
+
+        <div class="col-lg-4">
+          <div class="mb-3 mr-4 ml-5">
+            <img class="img-fluid img-thumbnail img-map" src="images/ii1.png" alt="">
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!---->
+
+  <section class="" class="">
+    <div class="container py-5">
+      <div class="row ticketInfo py-5">
+
+        <div class="col-lg-4">
+          <div class="ml-5">
+            <h4 class="text-info">Payment Details</h4>
+          </div>
+        </div>
+
+
+        
+
+        <div id="paymentInformation" class="col-lg-4">
+          <button type="button" class="btn btn-outline-primary d-none" id="payBtn" onclick="pppp()">Get Your Payment Information</button>
+            <!-- <div>
+              <h4 class="text-info"><img class="img-fluid ticketImg" src="images/pa2.jpg" alt="ticket">Card Details</h4>
+                    <div class="contain ml-5">
+                        
+                    <p>Abeer Adel Mohamed</p>
+                    <br>
+                    <div class="cardInfo">
+                    <p>Card Number: 9989 8590 9809 2345</p>
+                    <p>MM/YY: 12/12</p>
+                    </div>
+                    <p class="text-success">This Trip Is Operated By: Ticketaway</p>
+                    <br>
+                    <br>
+
+                    
+                    </div>
+              
+            </div> -->
+          </div>
+
+
+        <div class="col-lg-4">
+          <div class="mb-3 mr-4 ml-5">
+            <img class="img-fluid img-thumbnail img-map" src="images/pa1.png" alt="ticket">
+          </div>
+        </div>
+
+
+        
+        
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+   <!-- QR Code -->
+
+   <div class="container qrContain py-5 m-auto text-center ">
+    <h3>Your Qr Code</h3>
+    <br>
+    <button type="button" class="btn btn-outline-primary" id="payBtn" onclick="addQr()">Get Your QR</button>
+
+    <div id='qrContainer'>
+
+      
+    </div>
+
+  </div>
+
+  <!-- Wish -->
+
+<section class="wish">
+<div class="row container m-auto py-5">
+<div class="col-lg-6">
+  <div class="mb-3">
+    <img class="img-fluid img-thumbnail img-trip" src="images/trip.PNG" alt="">
+  </div>
+</div>
+<div class="col-lg-6">
+  <div>
+    <h2 class="mb-4 mt-2 font-weight-bold text-info">Ticketaway</h2>
+    <h5 class="text-dark"> Ticketaway wish you a safe and enjoyable journey.</h5>
+    <h4 class="text-dark">Here are some tips when you travel...</h4>
+    <ul>
+        <li>When using Metro, plan ahead and avoid busy times and routes if you can.</li>
+        <li>Keep your distance where you can</li>
+        <li>Wear a face covering in stations and on trains.</li>
+        <li>Wash or sanitise your hands regularly. We have hand sanitiser stands at our busier stations.</li>
+        <li>Please keep train windows open to help with ventilation.</li>
+    </ul>
+
+  </div>
+</div>
+</div>
+</section>
+
+
+
+        
+
+
+        
+
+      </div>
+    </div>
+  </section>
+
+
+  
+
+
+  <!--Footer-->
+  <footer class="footer py-4 text-center">
+    <p>
+      Copy Right 2021 © By Team All Rights Reserved
+    </p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- <script src="js/scriptTicket.js"></script>
+  <script src="js/mainPayment.js"></script> -->
+  <script src="js/info2.js"></script>
+  <script src="js/mainPayment.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,476 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Mulish', sans-serif; */
+    overflow-x: hidden;
+}
+/********************************************************/
+/* this is style for login form*/
+.loginput {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 30px;
+  /*border: 1px solid #ccc;*/
+  box-sizing: border-box;
+}
+
+.loginput:focus {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  /*background-color:antiquewhite;*/
+  color: white;
+}
+
+
+
+/* Set a style for all buttons */
+.buttonlog {
+  /* background-color: rgb(0,0,0);*/
+  color: white;
+  padding: 14px 20px;
+  margin: auto;
+  /*margin: 8px 0;*/
+  border: none;
+  border-bottom: 3px solid white;
+  cursor: pointer;
+  width: 100%;
+
+  border-radius: 20px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+/* .cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: rgb(0, 55, 60);
+  border-radius: 20%;
+  outline: none;
+} */
+
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+.form:hover {
+  box-shadow: 0px 0px 40px 16px rgba(0, 0, 0, 1.00);
+}
+
+.form1:hover {
+  box-shadow: 0px 0px 40px 16px rgba(0, 0, 0, 1.00);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgb(255, 255, 255);
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 2px solid orange;
+  border-radius: 30px;
+  width: 50%;
+  /* Could be more or less, depending on screen size */
+}
+.loginContain
+{
+  border-radius: 30px;
+}
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: wheat;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 50%;
+  }
+}
+
+.linkin:hover {
+  border-bottom: 3px solid rgb(255, 172, 0);
+}
+
+
+
+
+.booking {
+  text-decoration: none;
+  font-size: 30px;
+  background-color: white;
+  text-align: center;
+  border: 3px solid green;
+  padding: 5px;
+}
+
+.booking:hover {
+  background-color: black;
+  color: white;
+}
+
+form {
+  width: 85%;
+  color: black;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  border: 2px solid orange;
+  box-shadow: 0px 0px 40px 16px rgba(0, 0, 0, 1.00);
+}
+
+form:hover {
+  border: 2px solid lightblue;
+}
+
+lable {
+  font-size: 20px;
+  /*font-family: 'Lato';*/
+  font-style: italic;
+}
+
+.input {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 10px auto;
+
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-bottom: 2px solid gray;
+  /*border-radius: 15px;*/
+  /*background-color:antiquewhite;*/
+  color: black;
+  box-sizing: border-box;
+  display: inline-block;
+  /*position: absolute;*/
+  margin-bottom: 0px;
+
+}
+
+.inputError {
+  width: 30%;
+  margin: 1px auto;
+
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  color: black;
+  box-sizing: border-box;
+  display: inline-block;
+
+}
+
+.date {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-bottom: 2px solid gray;
+  /*border-radius: 15px;*/
+  box-sizing: border-box;
+  /*background-color:antiquewhite;*/
+  /*color: white;*/
+}
+
+.date:focus {
+  outline: none;
+}
+
+.input:focus {
+
+  outline: none;
+  background-color: white;
+  border: none;
+  border-bottom: 2px solid purple;
+  border-radius: 15px;
+  /*background-color:antiquewhite;*/
+  /*color: white;*/
+  /* border: 3px solid #555;*/
+
+}
+
+.input:hover {
+  border-bottom: 2px solid violet;
+}
+
+/*select {
+    width: 30%;
+    padding: 16px 20px;
+      margin: 10px;
+    border: none;
+      border-bottom: 3px solid rgb(2,2,2);
+    border-radius: 15px;
+      background-color: rgb(255,255,255);
+      box-sizing: border-box;
+    background-color:antiquewhite;
+  }*/
+  .cancelbtn,
+.btn-add,
+input[type=button],
+input[type=submit],
+input[type=reset] {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 30px;
+  color: whitesmoke;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+form lable {
+  color: black;
+}
+
+input[type=radio] {
+  color: red;
+  background-color: green;
+}
+
+
+
+#aday {
+  color: white;
+}
+
+.autocomplete {
+  position: relative;
+  display: inline-block;
+  width: 30%;
+}
+
+.station {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid gray;
+
+  padding: 10px;
+  font-size: 16px;
+}
+
+.station:hover {
+  border: none;
+  /*background-color: black;color:white;*/
+  border-bottom: 2px solid violet;
+}
+
+.station:focus {
+  border: none;
+  border-bottom: 2px solid purple;
+  /*border-color: white;*/
+  outline: none;
+}
+
+/*input[type=text] {
+    background-color: #f1f1f1;
+    width: 100%;
+  }*/
+
+/*
+  input[type=submit] {
+    background-color: DodgerBlue;
+    color: #fff;
+    cursor: pointer;
+  }
+  */
+
+.autocomplete-items {
+  position: absolute;
+  border: none;
+  /*border: 1px solid #d4d4d4;*/
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  /* border-bottom: 1px solid #d4d4d4;*/
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: white;
+  color: black;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+.month
+{
+  margin: 10px;
+  margin-bottom: 30px;
+  color: #8f6c05;
+  font-weight: bold;
+  /* text-decoration: underline; */
+}
+.month:hover
+{
+  color: black;
+}
+
+/**************************Ticket*********************/
+.header {
+  /* color: #131348; */
+  font-family: 'Lucida Handwriting', Cursive;
+  font-size: 35px;
+  font-weight: bold;
+  text-shadow: 4px 2px 2px lightblue;
+}
+
+.card {
+  border: 3px solid rgba(0, 0, 0, .125) !important;
+  box-shadow: 0px 5px 5px 5px #888888;
+}
+
+.tick-img {
+  height: 20%;
+  width: 20%;
+}
+
+.card-img {
+  height: 200px;
+  width: 200px;
+}
+
+.btncard {
+  color: black;
+  background-color: #fff;
+  border-color: black;
+  border-radius: 5px;
+  padding: 9px;
+  box-shadow: 1px 2px 2px 1px #ec6f6f;
+}
+
+.btncard:hover {
+  color: #fff;
+  background-color: rgb(32, 31, 31);
+}
+.pay-btn
+{
+  background-color: #1d3557;
+  margin-left: 20px;
+}
+
+/******************************Footer*******************/
+footer {
+  background: #1c1c1c;
+}
+
+footer p {
+  font-size: 13px;
+  word-spacing: 2px;
+  color: #748182;
+}
+  

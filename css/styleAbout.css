@@ -1,0 +1,219 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Mulish', sans-serif;
+    overflow-x: hidden;
+}
+h2
+{
+  color: #b68a08;
+}
+/********************Nav**********************/
+a:link 
+{
+    text-decoration: none;
+}
+a
+{
+    color: #000;
+}
+a:hover
+{
+    color: #000;
+}
+.logo 
+{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.navbar-dark .navbar-nav .nav-link
+{
+    color: #fff;
+}
+.btn-outline-success {
+  color: #fff;
+  border-color: #fff;
+}
+.btn-outline-success:hover {
+  background-color: #1D2529;
+  border-color: #1D2529;
+}
+
+.layer
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 20px;
+}
+.cover-nav
+{
+    
+    background-image: url(../images/google-train.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 50%;
+}
+/************Train*********************/
+.head
+{
+  font-size: 35px;
+  font-weight: bold;
+  color: #d4d4d4;
+}
+.train
+{
+    width: 200px;
+    position: relative;
+    animation-name: move;
+    animation-direction: normal;
+    animation-duration: 5s;
+    transform: rotateY(180deg);
+}
+@keyframes move 
+{
+    0%{left: -300px; top: 0; transform: rotateY(180deg);}
+    50%{left: 140%px; top: 0; transform: rotateY(360deg);}
+    51%{left: 141%px; top: 0; translate: rotateY(360deg);}
+    100%{left: 1900px; top: 0; translate: rotateY(180deg);}
+
+    
+}
+/************About*********************/
+.about a {
+    color: #000;
+    height: 42px;
+    width: 42px;
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 2px solid #d4d4d4;
+    text-align: center;
+    text-decoration: none;
+    transition: all .5s;
+
+  }
+  
+  .about a:hover{
+    color: #e65f78;
+    border: 2px solid #e65f78;
+}
+.img-about
+{
+  border: 2px solid rgba(12, 3, 112, 0.125); 
+  box-shadow: 2px 2px 2px 4px #1F1E46;
+}
+/*****************************Location*****************/
+.location
+{
+  background-color: #f7f7f7;
+}
+.img-map 
+{
+  width: 100%;
+  /* height: 100%; */
+  border: 2px solid rgba(12, 3, 112, 0.125); 
+  box-shadow: 2px 2px 2px 4px #79797e;
+}
+.textBold
+{
+  font-weight: bold;
+}
+/******************************Contact*******************/
+
+.headerContact
+{
+  font-size: 35px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.contact .item .icon {
+  font-size: 25px;
+  margin-bottom: 15px;
+  padding: 10px;
+  line-height: 60px;
+  background:  #f7f7f7;
+  border-radius: 50%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.contact .item .icon .fa
+{
+  color: #000;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.contact .item .icon:hover, .contact .icon .fa:hover
+{
+  background:  #000;
+  color: #fff;
+}
+.form-more
+{
+  border-radius: 5px;
+  padding: 10px;
+  background: #f4f4f4;
+  border: 1px solid #f4f4f4 ;
+}
+form textarea
+{
+  width: 100%;
+  height: 160px;
+  max-height: 160px;
+  max-width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  background: #f4f4f4;
+  border: 1px solid #f4f4f4 ;
+}
+.btn1
+{
+  color: #fff;
+  background-color: black;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 13px;
+  width: 120px;
+}
+.btn1:hover
+{
+  color: black;
+  background-color: #fff;
+  border-color: black;
+}
+.form-control 
+{
+  border-radius: 5px;
+  padding: 10px;
+  background: #f4f4f4;
+  border: 1px solid #f4f4f4;
+}
+/******************************Footer*******************/
+footer
+{
+  background: #1c1c1c;
+}
+footer p 
+{
+  font-size: 13px;
+  word-spacing: 2px;
+  color: #748182;
+}
+
+.btn-group
+{
+  margin-right: 30px;
+}

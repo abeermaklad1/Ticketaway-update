@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticketaway</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href =  "images/train-ticket-icon-cartoon-style-vector-24754004.jpg"  type = "image/x-icon"> 
+    
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+   <link rel = "icon" href ="train-ticket-icon-cartoon-style-vector-24754004.jpg" type = "image/x-icon"> 
+   
+<style>
+body {font-family: Helvetica, sans-serif;background-image: url(images/Train+on+Bridge+Hero+Sunset+Teal+Sydney+Metro+6k.jpg);background-repeat: no-repeat;background-size: 100%100%;background-attachment: fixed;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password],input[type=email], input[type=phone], input[type=nationalId] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 0 0;
+  display: inline-block;
+  border: none;
+  border-radius: 30px;
+  background: #f1f1f1;
+}
+    input[type=text]:focus ,input[type=password]:focus ,input[type=email]:focus {
+  background-color: rgb(0,0,0);
+  border: none;
+        outline: none;
+     border-bottom: 3px solid rgb(255,255,255);
+    border-radius: 15px;
+  /*background-color:antiquewhite;*/
+  color: white;
+}
+    span {margin-bottom: 50px;margin-top: 0;margin-left: 100px;}
+
+/* Add a background color when the inputs get focus */
+/*input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}*/
+
+/* Set a style for all buttons */
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+ border-radius: 50px;
+  
+}
+
+button:hover {
+  opacity:0.9;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: black;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: center;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+   /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0,0.5);
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: white;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+    border: 3px solid black;
+    border-radius: 50px ;
+}
+    .modal-content:hover{box-shadow: 0px 0px 40px 16px rgba(0,0,0,1.00);border:3px solid black;}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+    .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+    
+    
+    .close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #dc3545;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+</style>
+    </head>
+<body>
+
+
+
+<div id="id01" class="modal">
+
+  <span> </span>
+  <form name="form" class="modal-content" onsubmit="validateemail()" action=""  method="post">
+    <div class="container">
+      <!--<h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>-->
+        <div class="imgcontainer">
+            <span onclick="window.history.back()" class="close fa-3x text-danger" title="Close Modal">&times;</span>
+      
+      <img src="images/mo2.gif" alt="Avatar" class="avatar">
+        <p style="font-size: 35px;">welcome </p>
+    </div>
+      <hr>
+        
+      <label for="name"><b>user name</b></label>
+      <input id="name" type="text" placeholder="&#128100 user name" name="name" required>
+        <br><span id="mail" style="margin: 0;color: red;"></span><br>
+
+      <label for="email"><b>Email</b></label>
+      <input id="email" type="email" placeholder="&#128231 Enter Email" name="email" required>
+        <br><span id="mail" style="margin: 0;color: red;"></span><br>
+
+      <label for="psw"><b>Password</b></label>
+      <input id="psw" type="password" placeholder="&#128274 Enter Password" name="psw" required> <br>
+        <span id=" pass" style="margin: 0;color: red;"></span><br>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input  id="psw-repeat"type="password" placeholder="&#128272 Repeat Password" name="pswrepeat" required>
+        <br><span id=" passrepeat" style="margin: 0;color: red;"><small></small></span><br>
+
+        <label for="phone"><b>Phone Number</b></label>
+        <input id="phone" type="phone" placeholder="&#128222 Enter Phone Number" name="phone" pattern="[0]{1}[1]{1}[0-9]{9}" required>
+          <br><span id="phone" style="margin: 0;color: red;"></span><br>
+      
+          <label for="nationalId"><b>National ID</b></label>
+          <input id="nationalId" type="nationalId" placeholder="&#127380 Enter National ID" name="nationalId" pattern="(2|3)[0-9][1-9][0-1][1-9][0-3][1-9](01|02|03|04|11|12|13|14|15|16|17|18|19|21|22|23|24|25|26|27|28|29|31|32|33|34|35|88)\d\d\d\d\d" required>
+            <br><span id="nationalId" style="margin: 0;color: red;"></span><br>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        
+        <input type="submit" class="signupbtn" value="sign up">
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+    
+    
+    
+        function validateemail(){  
+        
+        var mail = document.form.email.value;  
+        var pass = document.form.psw.value;
+        var pass2 =document.form.pswrepeat.value;
+        var atposition=mail.indexOf("@");  
+        var dotposition=mail.lastIndexOf(".");  
+        if (atposition<1 || dotposition<atposition+2 || dotposition+2>=mail.length){  
+            // alert("enter valid mail ");
+           document.getElementById('mail').innerHTML="enter valid email!" ; 
+            return false;  
+       } else if(pass.length<6){  
+          // alert("يابنى دخل باسورد اكتر من 6 حروف متقرفناش معاك");
+         document.getElementById("pass").innerHTML="Password must be at least 6 characters long !";  
+        return false;  
+       } else if( pass != pass2){
+          //  alert("دخل نفس الباسورد عشان مش ازعلك ");
+           document.getElementById("passrepeat").innerHTML = "repeat the same password !";
+           return false;
+       } 
+     }  
+</script>
+      
+    
+    
+
+<script>
+// Get the modal                                                                                                                                                                                                                                                                                   
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "block";
+  }
+} 
+</script> 
+
+</body>
+</html>

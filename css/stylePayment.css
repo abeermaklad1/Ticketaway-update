@@ -1,0 +1,236 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/*****************************navbar***************************/
+
+.cover-nav {
+    background-image: url(../images/Train+on+Bridge+Hero+Sunset+Teal+Sydney+Metro+6k.jpg);
+    width: 100%;
+    height: 20%;
+    
+    }
+  
+  .layer
+  {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 20px;
+  }
+  
+  .cover-nav a:link 
+  {
+    text-decoration: none;
+  }
+  
+  .cover-nav a
+  {
+    color: #000;
+  }
+  
+  .cover-nav a:hover
+  {
+    color: #000;
+      
+  }
+  
+  .logo 
+  {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link
+  {
+    color: #fff;
+  }
+  
+  .btn-outline-success {
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #1D2529;
+    border-color: #1D2529;
+  }
+
+/**********************Payment****************************/
+.payment
+{
+  background-image: url(../images/bg5.png);
+  background-size: cover;
+}
+.payment .dform .form input
+{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    width: 70%;
+    padding: 10px 0 5px 5px;
+    background:transparent ;
+}
+
+.payment .dform .form input:focus 
+{
+    width: 70%;
+    padding: 10px 0 5px 5px;
+    background-color:#dde7f8 ;
+}
+
+.payment
+{
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px 5px 0px #848488;
+
+    
+
+}
+.payment .dform
+{
+    background-color: white;
+    width: 500px;
+    height: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2), 2px 6px 20px 2px rgba(0, 0, 0, 0.19);
+    
+}
+
+.payment .dform h1
+{
+    font-size: 40px;
+    color: #212A30;
+    padding-top: 30px;
+}
+
+.payment .dform .form
+{
+    padding-top: 40px;
+    
+    
+}
+
+.payment .dform .form .payment-form
+{
+    padding-bottom: 40px;
+    margin-left: 50px;
+}
+
+.payment .dform .div-visa img
+{
+    width: 10%;
+    border-radius: 5px;
+    
+}
+.payment .dform .form .div-pay
+{
+    text-align: right;
+    margin:0 50px 30px 0;
+}
+.payment .dform .form .pay-btn
+{
+    border: none;
+    outline: none;
+    padding: 7px 35px;
+    border-radius: 5px;
+    background-color: #1d3557;
+    font-size: 20px;
+    color: white;  
+}
+.payment .dform .form .pay-btn:hover
+{
+    background-color: #e63946;
+}
+
+/**************************QR***************************/
+.qrContain
+{
+  background-color: #fff;
+}
+.qrContain img
+{
+  width: 300;
+  height: 300;
+}
+
+/********************************************************/
+.wish
+{
+  background-color: #f7f7f7;
+}
+.img-trip
+{
+  height: 350px;
+  border-radius: 50%;
+}
+.wish-p
+{
+  font-size: 20;
+}
+.wish ul li
+{
+  font-size: 18px;
+}
+/******************************Footer*******************/
+footer
+{
+  background: #1c1c1c;
+}
+footer p 
+{
+  font-size: 13px;
+  word-spacing: 2px;
+  color: #748182;
+}
+
+.btn-group
+{
+  margin-right: 30px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 700px) {
+
+    .payment .dform
+   {
+    width: 400px;
+    height: auto;
+    
+   }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .payment .dform
+   {
+    width: 350px;
+    height: auto;
+    
+   }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .payment .dform
+   {
+    width: 300px;
+    height: auto;
+    
+   }
+
+   .payment .dform .form .payment-form
+   {
+    margin-left: 20px;
+   }
+}
+
